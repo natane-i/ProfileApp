@@ -13,6 +13,10 @@
 		BB6F66932BF599180059D6E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6F66912BF599180059D6E9 /* Main.storyboard */; };
 		BB6F66952BF599190059D6E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB6F66942BF599190059D6E9 /* Assets.xcassets */; };
 		BB6F66982BF599190059D6E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6F66962BF599190059D6E9 /* LaunchScreen.storyboard */; };
+		BB8D37812BFAE15D008A2ABE /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8D37802BFAE15D008A2ABE /* HobbyViewController.swift */; };
+		BB8D37832BFAE17D008A2ABE /* ContactFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8D37822BFAE17D008A2ABE /* ContactFormViewController.swift */; };
+		BB8D37892BFB032F008A2ABE /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8D37882BFB032F008A2ABE /* SendViewController.swift */; };
+		BB8D378B2BFB0382008A2ABE /* AfterSendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8D378A2BFB0382008A2ABE /* AfterSendingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		BB6F66942BF599190059D6E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB6F66972BF599190059D6E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB6F66992BF599190059D6E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB8D37802BFAE15D008A2ABE /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
+		BB8D37822BFAE17D008A2ABE /* ContactFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormViewController.swift; sourceTree = "<group>"; };
+		BB8D37882BFB032F008A2ABE /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = SOURCE_ROOT; };
+		BB8D378A2BFB0382008A2ABE /* AfterSendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterSendingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,10 @@
 				BB6F668B2BF599180059D6E9 /* AppDelegate.swift */,
 				BB6F668D2BF599180059D6E9 /* SceneDelegate.swift */,
 				BB6F668F2BF599180059D6E9 /* ViewController.swift */,
+				BB8D37802BFAE15D008A2ABE /* HobbyViewController.swift */,
+				BB8D37822BFAE17D008A2ABE /* ContactFormViewController.swift */,
+				BB8D37882BFB032F008A2ABE /* SendViewController.swift */,
+				BB8D378A2BFB0382008A2ABE /* AfterSendingViewController.swift */,
 				BB6F66912BF599180059D6E9 /* Main.storyboard */,
 				BB6F66942BF599190059D6E9 /* Assets.xcassets */,
 				BB6F66962BF599190059D6E9 /* LaunchScreen.storyboard */,
@@ -140,7 +152,11 @@
 			files = (
 				BB6F66902BF599180059D6E9 /* ViewController.swift in Sources */,
 				BB6F668C2BF599180059D6E9 /* AppDelegate.swift in Sources */,
+				BB8D37892BFB032F008A2ABE /* SendViewController.swift in Sources */,
 				BB6F668E2BF599180059D6E9 /* SceneDelegate.swift in Sources */,
+				BB8D37832BFAE17D008A2ABE /* ContactFormViewController.swift in Sources */,
+				BB8D37812BFAE15D008A2ABE /* HobbyViewController.swift in Sources */,
+				BB8D378B2BFB0382008A2ABE /* AfterSendingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
