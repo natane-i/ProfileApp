@@ -16,38 +16,51 @@ class ContactFormViewController: UIViewController {
     @IBOutlet weak var confirmBtn: UIButton!
     
     var clickCount = 0
+    let inactiveColor = UIColor(red: 235.0/255.0, green: 235.0/255.0, blue: 235.0/255.0, alpha: 1.0)
+    let mainColor = UIColor(red: 59.0/255.0, green: 53.0/255.0, blue: 50.0/255.0, alpha: 1.0)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         
+        resetLabel()
         
     }
     
+    func resetLabel() {
+        nameTextField.text = "" // ラベルの初期テキスト
+        mailTextField.text = ""
+        messageTextField.text = ""
+        
+        confirmBtn.backgroundColor = inactiveColor
+        clickCount = 0
+    }
+    
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        resetLabel()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
     @IBAction func confirmButton(_ sender: Any) {
-        //        nameTextField.text = "井上　日菜多"
-        //        mailTextField.text = "mail@contact.jp"
-        //        messageTextField.text = "よろしくお願いします。"
-        //
-        //        clickCount += 1
-        //
-        //        if clickCount == 1 {
-        //            confirmBtn.backgroundColor = .black
-        //        } else if clickCount >= 2 {
-//
-//        clickCount += 1
-//    }
-//
-//    if clickCount == 1 {
-//        confirmBtn.backgroundColor = .black
-//    } else if clickCount >= 2 {
+
+        if nameTextField.text?.isEmpty == true || mailTextField.text?.isEmpty == true || messageTextField.text?.isEmpty == true {
+            clickCount = 0
+        } else {
+            clickCount += 1
+        }
         
-//        if nameTextField.state.isEmpty ||  mailTextField.state.isEmpty || messageTextField.state.isEmpty {
-//        } else {
+        if clickCount == 1 {
+            confirmBtn.backgroundColor = mainColor
+        } else if clickCount >= 2 {
             performSegue(withIdentifier: "toConfirmSegue", sender: nil)
-//        }
+        }
         
     }
     

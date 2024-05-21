@@ -22,8 +22,7 @@ class HobbyViewController: UIViewController {
         }
     }
     
-    let imageArray: [ImageData] = [ImageData(imageName: "hobby_mainphoto01", imageText: "シンプルなドイリーです。\n実家の玄関で花瓶敷きとして活躍しています。"),ImageData(imageName: "hobby_mainphoto02", imageText: "父の日のプレゼントとして作った作品です。\nPeanutsに出てくるチャーリーブラウンが大好きな父のために、イラストや文言を調べて作成しました。")]
-    //お花をつけたドイリーです。\nお花の編み方は人によって様々で、一番綺麗に見える編み方を模索中です。
+    let imageArray: [ImageData] = [ImageData(imageName: "hobby_mainphoto01", imageText: "シンプルなドイリーです。\n実家の玄関で花瓶敷きとして活躍しています。"),ImageData(imageName: "hobby_mainphoto02", imageText: "父の日のプレゼントとして作った作品です。\nPeanutsに出てくるチャーリーブラウンが大好きな父のために、イラストや文言を調べて作成しました。"), ImageData(imageName: "hobby_mainphoto03", imageText: "お花をつけたドイリーです。\nお花の編み方は人によって様々で、一番綺麗に見える編み方を模索中です。")]
     
     var currentIndex = 0
     

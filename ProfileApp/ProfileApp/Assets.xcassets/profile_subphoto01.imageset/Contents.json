@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "photo2profile_subphoto01.png",
+      "filename" : "Mask groupprofile_subphoto01.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "photo2profile_subphoto01@2x.png",
+      "filename" : "Mask groupprofile_subphoto01@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "photo2profile_subphoto01@3x.png",
+      "filename" : "Mask groupprofile_subphoto01@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

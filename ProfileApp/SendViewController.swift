@@ -9,9 +9,11 @@ import UIKit
 
 class SendViewController: UIViewController {
 
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var mailTextField: UITextField!
-    @IBOutlet weak var messageTextField: UITextField!
+    @IBOutlet weak var nameTextLabel: UILabel!
+    @IBOutlet weak var mailTextLabel: UILabel!
+    @IBOutlet weak var messageTextLabel: UILabel!
+    
+    
     
     var nameText = ""
     var mailText = ""
@@ -23,12 +25,10 @@ class SendViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        self.nameTextField.text = nameText
-        self.mailTextField.text = mailText
-        self.messageTextField.text = messageText
-        
+        self.nameTextLabel.text = nameText
+        self.mailTextLabel.text = mailText
+        self.messageTextLabel.text = messageText
+
     }
     
-
-
 }

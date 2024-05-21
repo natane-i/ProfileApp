@@ -8,10 +8,10 @@
 import UIKit
 
 class AfterSendingViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -19,5 +19,4 @@ class AfterSendingViewController: UIViewController {
         self.navigationController?.popToRootViewController(animated: true)
     }
     
-  
 }

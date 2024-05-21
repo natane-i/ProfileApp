@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "submitbutton_inactive.png",
+      "filename" : "Mask grouphobby_mainphoto03.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "submitbutton_inactive@2x.png",
+      "filename" : "Mask grouphobby_mainphoto03@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "submitbutton_inactive@3x.png",
+      "filename" : "Mask grouphobby_mainphoto03@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

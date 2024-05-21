@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        sleep(2)
+        
         if #available(iOS 15.0, *) {
             // disable UITab bar transparent
             let tabBarAppearance: UITabBarAppearance = UITabBarAppearance()
