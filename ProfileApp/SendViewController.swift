@@ -13,22 +13,17 @@ class SendViewController: UIViewController {
     @IBOutlet weak var mailTextLabel: UILabel!
     @IBOutlet weak var messageTextLabel: UILabel!
     
-    
-    
     var nameText = ""
     var mailText = ""
     var messageText = ""
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         
         self.nameTextLabel.text = nameText
         self.mailTextLabel.text = mailText
         self.messageTextLabel.text = messageText
-
     }
     
 }

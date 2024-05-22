@@ -22,15 +22,13 @@ class ContactFormViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
         
         resetLabel()
-        
     }
     
     func resetLabel() {
-        nameTextField.text = "" // ラベルの初期テキスト
+        nameTextField.text = ""
         mailTextField.text = ""
         messageTextField.text = ""
         
@@ -38,30 +36,31 @@ class ContactFormViewController: UIViewController {
         clickCount = 0
     }
     
-
+    // 画面が表示される直前に行う処理を指定
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         resetLabel()
     }
     
+    // 画面をタッチするとテキストフィールドのキーボードが閉じる
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
     
     @IBAction func confirmButton(_ sender: Any) {
-
+        // テキストフィールドに入力がされているかの判定
         if nameTextField.text?.isEmpty == true || mailTextField.text?.isEmpty == true || messageTextField.text?.isEmpty == true {
             clickCount = 0
         } else {
             clickCount += 1
         }
         
+        // ボタンの色の変更とセグエの準備
         if clickCount == 1 {
             confirmBtn.backgroundColor = mainColor
         } else if clickCount >= 2 {
             performSegue(withIdentifier: "toConfirmSegue", sender: nil)
         }
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

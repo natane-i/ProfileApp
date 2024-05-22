@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AZD-p4-Unq">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -32,7 +33,7 @@
                                         <color key="textColor" name="textcolor main"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4xe-vp-3lA">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xe-vp-3lA">
                                         <rect key="frame" x="0.0" y="40" width="333" height="52"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <string key="text">お問合せフォームを構築しました。
@@ -204,7 +205,7 @@
                                         <color key="textColor" name="textcolor main"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gWj-2f-xJa">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWj-2f-xJa">
                                         <rect key="frame" x="0.0" y="43" width="333" height="52"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <string key="text">お問合せフォームを構築しました。
@@ -234,7 +235,7 @@
                                             <segue destination="7Oc-qE-KKH" kind="show" id="05n-nM-ayS"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMH-5j-13U">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMH-5j-13U">
                                         <rect key="frame" x="0.0" y="143" width="333" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="Ug1-jt-V0V"/>
@@ -243,7 +244,7 @@
                                         <color key="textColor" name="textcolor main"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7d-xl-NfQ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7d-xl-NfQ">
                                         <rect key="frame" x="0.0" y="236" width="333" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="470-LR-tlf"/>
@@ -255,8 +256,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfs-W1-5kz">
                                         <rect key="frame" x="0.0" y="329" width="333" height="150"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEp-kT-cUT">
-                                                <rect key="frame" x="0.0" y="0.0" width="333" height="15"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEp-kT-cUT">
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="0.0"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
                                                 <color key="textColor" name="textcolor main"/>
                                                 <nil key="highlightedColor"/>
@@ -414,7 +415,7 @@
                                         <color key="textColor" name="textcolor main"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VzS-ld-YXW">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VzS-ld-YXW">
                                         <rect key="frame" x="0.0" y="40" width="333" height="70"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <string key="text">刺繍やレース編みが趣味です。
@@ -449,7 +450,7 @@
                                             <action selector="prevButton:" destination="FIr-DV-sA6" eventType="touchUpInside" id="oqt-Vx-wxp"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P34-su-cFN">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P34-su-cFN">
                                         <rect key="frame" x="30" y="270.66666666666663" width="333" height="34"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" name="textcolor main"/>
@@ -587,7 +588,7 @@
                                                 <color key="textColor" name="textcolor main"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="兵庫県三田市出身。小さい頃の憧れだったマクドナルドで、高校生の頃から7年間働いていた。在庫管理に使う表の作成などを行ううちに、PCに携わる仕事をしたいと思い、転職。現在はエンジニアを目指して日々勉強している。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="My8-vZ-msh">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="兵庫県三田市出身。小さい頃の憧れだったマクドナルドで、高校生の頃から7年間働いていた。在庫管理に使う表の作成などを行ううちに、PCに携わる仕事をしたいと思い、転職。現在はエンジニアを目指して日々勉強している。" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="My8-vZ-msh">
                                                 <rect key="frame" x="30" y="50" width="333" height="88"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <color key="textColor" name="textcolor main"/>
@@ -600,7 +601,7 @@
                                                     <constraint firstAttribute="width" secondItem="D6K-iy-X94" secondAttribute="height" multiplier="1:1" id="1Ug-AG-2bt"/>
                                                 </constraints>
                                             </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fv3-ck-Eco">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fv3-ck-Eco">
                                                 <rect key="frame" x="30" y="513" width="333" height="160"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <string key="text">現在、iOSアプリ開発の職業訓練を受講しています。
@@ -622,7 +623,7 @@
                                                     <constraint firstAttribute="width" secondItem="et9-Ry-bYF" secondAttribute="height" multiplier="1:1" id="wf9-3A-KY7"/>
                                                 </constraints>
                                             </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0E2-nh-Bbh">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0E2-nh-Bbh">
                                                 <rect key="frame" x="30" y="872.33333333333337" width="333" height="214.00000000000011"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <string key="text">アプリ開発に興味を持ったきっかけは、家計簿アプリを探していたときです。
