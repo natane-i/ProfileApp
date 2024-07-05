@@ -53,10 +53,12 @@ class HobbyViewController: UIViewController {
         let data = imageArray[currentIndex]
         let nextImage = UIImage(named: data.imageName)
         
-        // アニメーションを設定
-        UIView.transition(with: hobbyImage, duration: 0.5, options: moveForward ? .transitionCrossDissolve : .transitionCrossDissolve, animations: {
-            self.hobbyImage.image = nextImage
-        }, completion: nil)
+        hobbyImage.image = nextImage
+        let transition = CATransition()
+        transition.type = .push
+        transition.subtype = moveForward ? .fromRight : .fromLeft
+        transition.duration = 0.3
+        hobbyImage.layer.add(transition, forKey: nil)
 
         // テキストを更新
         explanation.text = data.imageText
